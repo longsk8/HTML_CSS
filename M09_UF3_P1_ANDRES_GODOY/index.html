@@ -246,13 +246,14 @@
                         <div class="row align-items-center justify-content-between">
                             <div class="col-md">
                                 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                                    
+
                                     <div class="carousel-inner">
                                         <div class="carousel-item active">
                                             <img class="d-block w-100" src="img/manoceramica.jpg" alt="First slide">
                                         </div>
                                         <div class="carousel-item">
-                                            <img class="d-block w-100" src="img/_ef534d38-6d44-461e-82e0-296f3493d24f.jpg" alt="Second slide">
+                                            <img class="d-block w-100"
+                                                src="img/_ef534d38-6d44-461e-82e0-296f3493d24f.jpg" alt="Second slide">
                                         </div>
                                         <div class="carousel-item">
                                             <img class="d-block w-100" src="img/maseta2.jpg" alt="Third slide">
@@ -331,10 +332,26 @@
                                             placeholder="name@example.com" data-sb-validations="required,email"
                                             data-sb-can-submit="no">
                                         <label for="email">Correo Electronico</label>
-                                        <div class="invalid-feedback" data-sb-feedback="email:required">An email is
-                                            required.</div>
-                                        <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.
+                                        <div class="invalid-feedback" data-sb-feedback="email:required">El email es
+                                            requerido.</div>
+                                        <div class="invalid-feedback" data-sb-feedback="email:email">El email no es
+                                            correcto.
                                         </div>
+                                    </div>
+                                    <!-- div con el select  -->
+                                    <div class="form-floating mb-3">
+                                    
+                                        <div class="input-group">
+                                            <select class="form-select" id="phone-select" data-sb-validations="required">
+                                                <option value="" selected disabled>Tu prefijo</option>
+                                                <option value="0034">0034</option>
+                                                <option value="0056">0056</option>
+                                                <option value="0001">0001</option>
+                                            </select>
+                                            <input type="text" class="form-control" id="phone-input" placeholder="Ingresa tu número de teléfono">
+                                        </div>
+                                        <div class="invalid-feedback" data-sb-feedback="phone-select:required">Por favor, selecciona un número de teléfono.</div>
+                                        <div class="invalid-feedback" data-sb-feedback="phone-input:required">Por favor, ingresa tu número de teléfono.</div>
                                     </div>
 
                                     <!-- Message input -->
@@ -353,6 +370,15 @@
                                     </div>
                                     <div class="d-none" id="submitErrorMessage">
                                         <div class="text-center text-danger mb-3">Error al enviar el mensaje</div>
+                                    </div>
+                                    <!-- check -->
+                                    <div class="mb-3">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="privacyCheck" required>
+                                            <label class="form-check-label" for="disabledFieldsetCheck">
+                                                Estas de acuerda con la politica de privacidad
+                                            </label>
+                                        </div>
                                     </div>
                                     <!-- enviar Button -->
                                     <div class="d-grid">
